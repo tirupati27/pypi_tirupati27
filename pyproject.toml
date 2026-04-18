@@ -12,7 +12,7 @@ license = "MIT"
 authors = [
     {name="Tirupati", email="balaji274401@gmail.com"}
 ]
-readme = "@README.md"
+readme = "README.md"
 requires-python = ">=3.9"
 dependencies = []
 

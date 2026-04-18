@@ -1,0 +1,34 @@
+# How to install
+#    - "pip install . --no-build-isolation"     install offline
+#    - "pip install -e ."                       editable install
+# editable install reflect changes live, used for testing packages, it is similar to [app.run(debug=True)] in flask.
+
+[project]
+name = "tirupati27"
+version = "2026.4.14"
+description = "My first Python package"
+license = "MIT"
+    # Also have 'LICENSE' file in this directory
+authors = [
+    {name="Tirupati", email="balaji274401@gmail.com"}
+]
+readme = "@README.md"
+requires-python = ">=3.9"
+dependencies = []
+
+
+[project.scripts]
+pprint = "tirupati27.text_attr:main"
+
+
+[project.urls]
+Homepage = "https://github.com/tirupati27/pypi_tirupati27"
+
+
+[tool.setuptools.packages.find]
+where = ["The_package"]
+
+
+# [build-system]
+# requires = ["setuptools>=61", "wheel"]
+# build-backend = "setuptools.build_meta"
